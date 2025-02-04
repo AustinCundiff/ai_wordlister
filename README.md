@@ -2,6 +2,7 @@
 Queries Free AI Services in order to build word lists for content discovery & fuzzing.
 
 ### Usage:
+```
 usage: ai_wordlister.py [-h] [-d] -f DOMAIN_FILE -c CONFIG_FILE [-p PROMPT] [-o OUTPUT]
 
 Make API requests using domains and API keys from config file.
@@ -17,4 +18,4 @@ options:
                         E.g. Subdomains separated by a colon. Use this list as a seed, generate X new subdomains. Only return subdomains for DOMAIN.
   -o OUTPUT, --output OUTPUT
                         Write subdomains to a file.
-
+```
