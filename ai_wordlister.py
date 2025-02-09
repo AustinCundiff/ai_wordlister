@@ -57,8 +57,8 @@ def write_subs(outfile,response_text):
             out_fd.write(f"{line}\n")
     return
 
-def generate_requests(domains,prompt,outfile):
-    for batch in batch_iterable(domains, 100):
+def generate_requests(domains,prompt,outfile,batch_size):
+    for batch in batch_iterable(domains, batch_size):
         batch_text = "<".join(batch)
         gemini_response = gemini_request(f"{prompt} {batch_text}")
         if outfile is not None:
@@ -99,10 +99,9 @@ def main():
     else:
         prompt = "There are {batch_size} URLs separated by a < character. Using this list as a seed, generate 150 new possible directories for the site. Only return the directories. No explanations or numbering."
     entries = read_domains(args.input_file)
-    generate_requests(entries,prompt,args.output)
+    generate_requests(entries,prompt,args.output,batch_size)
 
     return
 
 if __name__ == "__main__":
     main()
-
