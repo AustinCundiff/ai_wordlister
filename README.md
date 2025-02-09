@@ -19,3 +19,10 @@ options:
                         Write subdomains to a file.
 
 ```
+## Example
+```
+# Generate directories using URLs in a file named urls.txt and output to a file called output_test.txt.
+python3 ai_wordlister.py -c config -f urls.txt -d -o output_test.txt
+# Generate subdomains using a file of domains:
+python3 ai_wordlister.py -c config -f domains.txt -s -o output_test.txt
+```
