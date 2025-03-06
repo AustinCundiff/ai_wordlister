@@ -26,7 +26,7 @@ options:
 
 ```
 ## Example
-```
+```bash
 # Generate directories using URLs in a file named urls.txt and output to a file called output_test.txt.
 python3 lister.py -c config -f urls.txt -d -o output_test.txt
 # Generate subdomains using a file of domains:
