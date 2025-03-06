@@ -2,8 +2,10 @@
 Queries Free AI Services in order to build word lists for content discovery & fuzzing.
 
 ### Install
+```
 pip install pipenv
 pipenv install
+```
 
 ### Usage:
 ```
