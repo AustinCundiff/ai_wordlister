@@ -1,6 +1,10 @@
 # AI_Wordlister
 Queries Free AI Services in order to build word lists for content discovery & fuzzing.
 
+### Install
+pip install pipenv
+pipenv install
+
 ### Usage:
 ```
 options:
@@ -22,7 +26,7 @@ options:
 ## Example
 ```
 # Generate directories using URLs in a file named urls.txt and output to a file called output_test.txt.
-python3 ai_wordlister.py -c config -f urls.txt -d -o output_test.txt
+python3 lister.py -c config -f urls.txt -d -o output_test.txt
 # Generate subdomains using a file of domains:
-python3 ai_wordlister.py -c config -f domains.txt -s -o output_test.txt
+python3 lister.py -c config -f domains.txt -s -o output_test.txt
 ```
