@@ -1,6 +1,7 @@
 [[source]]
 url = "https://pypi.org/simple"
 verify_ssl = true
+name = "pypi"
 
 [dev-packages]
 
@@ -9,6 +10,7 @@ aiohttp = "*"
 argparse = "*"
 requests = "*"
 openai = "*"
+groq = "*"
 
 [requires]
 python_version = "3.8"
