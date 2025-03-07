@@ -1,5 +1,5 @@
 # AI_Wordlister
-Queries Free AI Services in order to build word lists for content discovery & fuzzing.
+Queries Free AI Services in a round-robin fashion to build word lists for content discovery & fuzzing. It currently supports Deepseek, Gemini, and Groq.
 
 ### Install
 ```
@@ -7,6 +7,7 @@ pip install pipenv
 pipenv install
 ```
 
+Ensure you obtain API keys for Groq, Openrouter, and Gemini and place them in your config.ini file. An example is included in this repository. Beaware that you may hit rate limits.
 ### Usage:
 ```
 options:
