@@ -3,8 +3,7 @@ Queries Free AI Services in a round-robin fashion to build word lists for conten
 
 ### Install
 ```
-pip install pipenv
-pipenv install
+go build -o aiwordlister aiwordlister.go
 ```
 
 Ensure you obtain API keys for Groq, Openrouter, and Gemini and place them in your config.ini file. An example is included in this repository. Beaware that you may hit rate limits.
@@ -29,7 +28,7 @@ options:
 ## Example
 ```bash
 # Generate directories using URLs in a file named urls.txt and output to a file called output_test.txt.
-python3 lister.py -c config -f urls.txt -d -o output_test.txt
+aiwordlister -c config -f urls.txt -d -o output_test.txt
 # Generate subdomains using a file of domains:
-python3 lister.py -c config -f domains.txt -s -o output_test.txt
+aiwordlister  -c config -f domains.txt -s -o output_test.txt
 ```
